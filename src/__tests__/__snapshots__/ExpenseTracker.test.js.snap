@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExpenseTracker component renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="expense-tracker-container"
+  >
+    <div
+      class="spend-info-container"
+    >
+      <h2>
+        Daily Spend Limit
+      </h2>
+      <div
+        class="text-content"
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div
+        class="daily-spend-limit"
+      >
+        <span
+          class="label"
+        >
+          Daily spend limit
+        </span>
+        <span
+          class="amount"
+        >
+          £100.00
+        </span>
+      </div>
+    </div>
+    <div
+      class="spend-limit-container"
+    >
+      <div
+        class="progress-container"
+      >
+        <div
+          class="spent-limit-amount"
+        >
+          <p>
+            £25.00
+          </p>
+          <p>
+            £100.00
+          </p>
+        </div>
+        <div
+          class="progress"
+        >
+          <div
+            class="progress-fill"
+            style="width: 25%; background-color: red;"
+          />
+        </div>
+        <div
+          class="progress-label"
+        >
+          <p>
+            Today spent £25% of limit
+          </p>
+          <p>
+            Spend limit
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    Notification settings
+  </div>
+</DocumentFragment>
+`;
