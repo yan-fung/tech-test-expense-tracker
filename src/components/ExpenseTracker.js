@@ -39,7 +39,12 @@ const ExpenseTracker = () => {
     }
   };
 
-  const handleAddPhone = () => {
+    const handleAddPhone = () => {
+        if (emails.length === 0) {
+            alert("Please add an email before adding a phone number.");
+            return;
+          }
+          
     if (phones.length >= 4) {
       alert("You cannot add more than four phone numbers.");
     } else {
@@ -49,7 +54,21 @@ const ExpenseTracker = () => {
       setPhone("");
     }
   };
-    
+
+  const handleRemoveEmail = (index) => {
+    const updatedEmails = [...emails];
+    updatedEmails.splice(index, 1);
+    setEmails(updatedEmails);
+    localStorage.setItem("emails", JSON.stringify(updatedEmails));
+  };
+
+  const handleRemovePhone = (index) => {
+    const updatedPhones = [...phones];
+    updatedPhones.splice(index, 1);
+    setPhones(updatedPhones);
+    localStorage.setItem("phones", JSON.stringify(updatedPhones));
+  };
+
   return (
     <>
       <div className="expense-tracker-container">
@@ -118,6 +137,9 @@ const ExpenseTracker = () => {
               {emails.map((email, index) => (
                 <li key={index}>
                   {email}
+                  <button onClick={() => handleRemoveEmail(index)}>
+                    Remove
+                  </button>
                 </li>
               ))}
             </ul>
@@ -129,6 +151,9 @@ const ExpenseTracker = () => {
               {phones.map((phone, index) => (
                 <li key={index}>
                   {phone}
+                  <button onClick={() => handleRemovePhone(index)}>
+                    Remove
+                  </button>
                 </li>
               ))}
             </ul>
