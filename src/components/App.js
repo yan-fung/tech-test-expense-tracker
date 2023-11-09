@@ -1,7 +1,12 @@
 import "../styles/app.css";
+import ExpenseTracker from "../components/ExpenseTracker";
 
 const App = () => {
-  return <div>Daily spend limit</div>;
+  return (
+    <div className="App">
+      <ExpenseTracker />
+    </div>
+  );
 };
 
 export default App;
