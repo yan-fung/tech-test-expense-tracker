@@ -30,7 +30,7 @@ exports[`renders app 1`] = `
           <span
             class="label"
           >
-            Daily spend limit
+            Daily spend limit:
           </span>
           <span
             class="amount"
@@ -67,7 +67,7 @@ exports[`renders app 1`] = `
             class="progress-label"
           >
             <p>
-              Today spent £25% of limit
+              Today's spend: 25% of limit
             </p>
             <p>
               Spend limit
@@ -76,8 +76,48 @@ exports[`renders app 1`] = `
         </div>
       </div>
     </div>
-    <div>
-      Notification settings
+    <div
+      class="notification-container"
+    >
+      <h3>
+        Notification settings
+      </h3>
+      <div>
+        <label>
+          Email:
+        </label>
+        <input
+          type="text"
+          value=""
+        />
+        <button>
+          Add Email
+        </button>
+      </div>
+      <div>
+        <label>
+          Phone Number:
+        </label>
+        <input
+          type="text"
+          value=""
+        />
+        <button>
+          Add Phone Number
+        </button>
+      </div>
+      <div>
+        <h2>
+          Emails (up to 4):
+        </h2>
+        <ul />
+      </div>
+      <div>
+        <h2>
+          Phone Numbers (up to 4):
+        </h2>
+        <ul />
+      </div>
     </div>
   </div>
 </DocumentFragment>
