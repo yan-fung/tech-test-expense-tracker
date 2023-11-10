@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+<h1 align="center">
+Technical Task for Invosys
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction 
+A technical task as part of an interview for Invosys.
 
-## Available Scripts
+My task involved building a a new React Component to represent the image displayed above. The component will be used to integrate to an endpoint which will provide the following information:
 
-In the project directory, you can run:
+- Daily Spend Limit (£100)
+- Current Spend (£25)
+- List of (up to 4 and at least 1) email addresses 
+- List of (up to 4) mobile numbers
+  
+The component has the capability to use local storage. It should be written as a standalone component that can be easily integrated into an existing application.
 
-### `npm start`
+I also added a "remove" button to allow users to delete email addresses and phone numbers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application is deployed on Vercel, and you can try the app [here](https://tech-test-expense-tracker.vercel.app/): 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Desktop view
+An alert message pops up if a user attempts to submit a phone number without adding an email.
 
-### `npm test`
+![Screenshot 2023-11-10 at 00 34 38](https://github.com/yan-fung/tech-test-expense-tracker/assets/106375522/0f1db42d-a859-415f-8462-d9c06d2952a6)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot 2023-11-10 at 00 36 41](https://github.com/yan-fung/tech-test-expense-tracker/assets/106375522/89a289df-bed5-4a1d-a02f-cf081c9b1b86)
 
-### `npm run build`
+## Quick Start and Commands
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repo:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+gh repo clone /yan-fung/tech-test-expense-tracker
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install the packages locally:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Run the development server for the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Test the code in tests folder. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm test
+```
 
-## Learn More
+## Technology
+- [React](https://legacy.reactjs.org/docs/getting-started.html) is a JavaScript library for building user interfaces, and [React Testing library](https://testing-library.com/docs/react-testing-library/intro/) is a testing utility for testing React components. Combining them allowing to create interactive and easily testable user interfaces.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+🧑‍🚀 Yan Fung
+- GitHub [@yan-fung](https://github.com/yan-fung)
+- LinkedIn [@yan-fung](https://www.linkedin.com/in/yan-fung-4082401a4/)
