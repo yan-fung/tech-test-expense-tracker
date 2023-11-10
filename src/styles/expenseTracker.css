@@ -1,3 +1,4 @@
+/* Expense tracker */
 .expense-tracker-container {
     display: flex; 
     justify-content: space-between;
@@ -85,7 +86,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 100px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(253, 253, 253);
     align-items: center;
     padding-left: 30px;
@@ -97,3 +98,46 @@
     margin: 0;
   }
   
+  /* Notification settings */
+  .notification-container {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+  .input {
+    margin: 3px 10px;
+    padding: 4px 4px;
+    background-color: #eeebeb;
+    font-size: 16px;
+    border-radius: 3px;
+  }
+
+  .btn {
+    margin: 0 5px;
+    background-color:rgb(53, 101, 159);
+    border-radius: 3px;
+    font-size: 16px;
+    color: rgb(239, 243, 247);
+    cursor: pointer;
+    padding: 4px 15px;
+  }
+
+  .btn:hover {
+    background-color:rgb(224, 226, 228);
+    color: rgb(41, 42, 43);
+  }
+
+  .remove-btn  {
+    margin: 3px 5px;
+    background-color:rgb(239, 176, 163);
+    border-radius: 3px;
+    font-size: 16px;
+    color: #202122;
+    cursor: pointer;
+    padding: 2px 15px;
+  }
+
+  .remove-btn:hover {
+    background-color:rgb(224, 226, 228);
+    color: rgb(41, 42, 43);
+  }
