@@ -39,12 +39,12 @@ const ExpenseTracker = () => {
     }
   };
 
-    const handleAddPhone = () => {
-        if (emails.length === 0) {
-            alert("Please add an email before adding a phone number.");
-            return;
-          }
-          
+  const handleAddPhone = () => {
+    if (emails.length === 0) {
+      alert("Please add an email before adding a phone number.");
+      return;
+    }
+
     if (phones.length >= 4) {
       alert("You cannot add more than four phone numbers.");
     } else {
@@ -111,33 +111,42 @@ const ExpenseTracker = () => {
       <>
         <div className="notification-container">
           <h3>Notification settings</h3>
-          <div>
+          <div className="email">
             <label>Email:</label>
             <input
+              className="input"
               type="text"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <button onClick={handleAddEmail}>Add Email</button>
+            <button className="btn" onClick={handleAddEmail}>
+              Add Email
+            </button>
           </div>
 
-          <div>
+          <div className="phone">
             <label>Phone Number:</label>
             <input
+              className="input"
               type="text"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
-            <button onClick={handleAddPhone}>Add Phone Number</button>
+            <button className="btn" onClick={handleAddPhone}>
+              Add Phone Number
+            </button>
           </div>
 
           <div>
-            <h2>Emails (up to 4):</h2>
+            <p>Emails (up to 4):</p>
             <ul>
               {emails.map((email, index) => (
                 <li key={index}>
                   {email}
-                  <button onClick={() => handleRemoveEmail(index)}>
+                  <button
+                    className="remove-btn"
+                    onClick={() => handleRemoveEmail(index)}
+                  >
                     Remove
                   </button>
                 </li>
@@ -146,12 +155,15 @@ const ExpenseTracker = () => {
           </div>
 
           <div>
-            <h2>Phone Numbers (up to 4):</h2>
+            <p>Phone Numbers (up to 4):</p>
             <ul>
               {phones.map((phone, index) => (
                 <li key={index}>
                   {phone}
-                  <button onClick={() => handleRemovePhone(index)}>
+                  <button
+                    className="remove-btn"
+                    onClick={() => handleRemovePhone(index)}
+                  >
                     Remove
                   </button>
                 </li>
