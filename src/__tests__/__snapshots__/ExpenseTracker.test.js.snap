@@ -79,40 +79,50 @@ exports[`ExpenseTracker component renders correctly 1`] = `
     <h3>
       Notification settings
     </h3>
-    <div>
+    <div
+      class="email"
+    >
       <label>
         Email:
       </label>
       <input
+        class="input"
         type="text"
         value=""
       />
-      <button>
+      <button
+        class="btn"
+      >
         Add Email
       </button>
     </div>
-    <div>
+    <div
+      class="phone"
+    >
       <label>
         Phone Number:
       </label>
       <input
+        class="input"
         type="text"
         value=""
       />
-      <button>
+      <button
+        class="btn"
+      >
         Add Phone Number
       </button>
     </div>
     <div>
-      <h2>
+      <p>
         Emails (up to 4):
-      </h2>
+      </p>
       <ul />
     </div>
     <div>
-      <h2>
+      <p>
         Phone Numbers (up to 4):
-      </h2>
+      </p>
       <ul />
     </div>
   </div>
