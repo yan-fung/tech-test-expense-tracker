@@ -5,7 +5,7 @@ Technical Task for Invosys
 ## Introduction 
 A technical task as part of an interview for Invosys.
 
-My task involved building a a new React Component to represent the image displayed above. The component will be used to integrate to an endpoint which will provide the following information:
+My task involved building a new React Component to represent the image provided. The component will be used to integrate to an endpoint which will provide the following information:
 
 - Daily Spend Limit (£100)
 - Current Spend (£25)
@@ -52,7 +52,7 @@ npm test
 ```
 
 ## Technology
-- [React](https://legacy.reactjs.org/docs/getting-started.html) is a JavaScript library for building user interfaces, and [React Testing library](https://testing-library.com/docs/react-testing-library/intro/) is a testing utility for testing React components. Combining them allowing to create interactive and easily testable user interfaces.
+- [React](https://legacy.reactjs.org/docs/getting-started.html) is a JavaScript library for building user interfaces, and [React Testing library](https://testing-library.com/docs/react-testing-library/intro/) is a testing utility for testing React components. Combining them to create interactive and easily testable user interfaces.
 
 ## Authors
 🧑‍🚀 Yan Fung
